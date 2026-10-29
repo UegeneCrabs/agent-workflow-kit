@@ -1,0 +1,28 @@
+{
+  "name": "agent-workflow-kit",
+  "version": "0.1.0",
+  "repository": "https://github.com/UegeneCrabs/agent-workflow-kit",
+  "format": "instruction-library",
+  "payload": [
+    ".agents/skills",
+    ".agents/rules"
+  ],
+  "default_stack_profile": "python-business-web",
+  "stack_profiles": {
+    "python-business-web": {
+      "version": 1,
+      "path": ".agents/skills/role-skill-builder/assets/stack-profiles/python-business-web.md"
+    }
+  },
+  "required_models": {
+    "analyst_author": "gpt-6-astra",
+    "analyst_reviewer": "gpt-6.1-sol",
+    "coder": "inherited",
+    "testers": [
+      "gpt-6-astra",
+      "gpt-6.1-sol",
+      "gpt-6.1-terra"
+    ]
+  },
+  "legacy_executables_included": false
+}

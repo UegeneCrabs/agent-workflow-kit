@@ -1,0 +1,4 @@
+interface:
+  display_name: "Конструктор ролей"
+  short_description: "Создание ролей, границ и передачи задач"
+  default_prompt: "Используй $role-skill-builder для создания или обновления ролевого навыка под мою задачу."
